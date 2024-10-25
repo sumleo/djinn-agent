@@ -4,12 +4,7 @@ from typing import Any
 
 from anthropic.types.beta import BetaToolUnionParam
 
-from .base import (
-    BaseAnthropicTool,
-    ToolError,
-    ToolFailure,
-    ToolResult,
-)
+from .base import BaseAnthropicTool, ToolError, ToolFailure, ToolResult
 
 
 class ToolCollection:
