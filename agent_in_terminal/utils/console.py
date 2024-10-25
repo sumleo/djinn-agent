@@ -76,7 +76,7 @@ class ConsolePrinter:
                     )
                 )
             # Check if the tool is str_replace_editor
-            elif message["name"] == 'str_replace_editor':
+            elif message["name"] == "str_replace_editor":
                 self.console.print(
                     Panel(
                         Text(

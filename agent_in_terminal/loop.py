@@ -11,28 +11,17 @@ from enum import StrEnum
 from typing import Any, cast
 
 import httpx
-from anthropic import (
-    Anthropic,
-    AnthropicBedrock,
-    AnthropicVertex,
-    APIError,
-    APIResponseValidationError,
-    APIStatusError,
-)
-from anthropic.types.beta import (
-    BetaCacheControlEphemeralParam,
-    BetaContentBlockParam,
-    BetaImageBlockParam,
-    BetaMessage,
-    BetaMessageParam,
-    BetaTextBlock,
-    BetaTextBlockParam,
-    BetaToolResultBlockParam,
-    BetaToolUseBlockParam,
-)
+from anthropic import (Anthropic, AnthropicBedrock, AnthropicVertex, APIError,
+                       APIResponseValidationError, APIStatusError)
+from anthropic.types.beta import (BetaCacheControlEphemeralParam,
+                                  BetaContentBlockParam, BetaImageBlockParam,
+                                  BetaMessage, BetaMessageParam, BetaTextBlock,
+                                  BetaTextBlockParam, BetaToolResultBlockParam,
+                                  BetaToolUseBlockParam)
 
 from agent_in_terminal.constant.message import Sender
-from agent_in_terminal.tools import BashTool, EditTool, ToolCollection, ToolResult
+from agent_in_terminal.tools import (BashTool, EditTool, ToolCollection,
+                                     ToolResult)
 
 COMPUTER_USE_BETA_FLAG = "computer-use-2024-10-22"
 PROMPT_CACHING_BETA_FLAG = "prompt-caching-2024-07-31"

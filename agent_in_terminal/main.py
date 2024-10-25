@@ -1,19 +1,18 @@
 import asyncio
+import os
 
+from anthropic.types.beta import BetaTextBlockParam
 from rich.prompt import Prompt
 from rich.text import Text
 
 from agent_in_terminal.constant.message import Sender
-from agent_in_terminal.loop import console_loop, APIProvider
+from agent_in_terminal.loop import APIProvider, console_loop
 from agent_in_terminal.utils.console import ConsolePrinter
-from anthropic.types.beta import (
-    BetaTextBlockParam,
-)
-import os
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 LLM_MODEL = "claude-3-5-sonnet-20241022"
+
 
 async def main():
 
@@ -56,7 +55,6 @@ async def main():
             api_response_callback=lambda x, y, z: print(x, y, z),
             api_key=ANTHROPIC_API_KEY,
         )
-
 
 
 if __name__ == "__main__":
