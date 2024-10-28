@@ -1,15 +1,21 @@
 import asyncio
 import os
+import sys
 
 from anthropic.types.beta import BetaTextBlockParam
 from rich.prompt import Prompt
 from rich.text import Text
 
-from agent_in_terminal.constant.message import Sender
-from agent_in_terminal.loop import APIProvider, console_loop
-from agent_in_terminal.utils.console import ConsolePrinter
+from djinn.constant.message import Sender
+from djinn.loop import APIProvider, console_loop
+from djinn.utils.console import ConsolePrinter
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+
+# Check if the API key is set otherwise raise an error
+if not ANTHROPIC_API_KEY:
+    print("Please set the ANTHROPIC_API_KEY environment variable")
+    sys.exit(1)
 
 LLM_MODEL = "claude-3-5-sonnet-20241022"
 
@@ -57,5 +63,9 @@ async def main():
         )
 
 
-if __name__ == "__main__":
+def sync_main():
     asyncio.new_event_loop().run_until_complete(main())
+
+
+if __name__ == "__main__":
+    sync_main()
