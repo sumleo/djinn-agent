@@ -1,11 +1,11 @@
 # Djinn-Agent
 
-Djinn-Agent is a lightweight, terminal-based tool designed for seamless interaction with Claude's cutting-edge computer-use capabilities. Tailored for developers who want to harness the full potential of Claude's functionality from the command line, Djinn-Agent provides an intuitive, efficient interface that integrates easily into your workflow.
+Djinn-Agent is a lightweight, terminal-based tool designed for seamless interaction with Claude's cutting-edge computer-use capabilities—now optimized exclusively for terminal environments. Djinn-Agent enables efficient, command-line-driven workflows, excluding GUI-based actions to focus solely on terminal execution. Tailored for developers looking to integrate Claude’s functionality directly into their command line, Djinn-Agent is both intuitive and efficient.
 
 ## 🚀 Features
 
 - **Direct CLI Access**: Interact with Claude directly from your terminal for a streamlined experience.
-- **Claude's Computer Use Capabilities**: Leverages Claude’s unique ability to navigate, click, type, and more, simulating human-computer interaction for complex workflows.
+- **Terminal-Only Computer Use Capabilities**: Leverages Claude’s ability to execute terminal commands, specifically excluding GUI operations, for robust CLI automation.
 - **Customizable for Development**: With simple setup and configuration options, you can easily tweak Djinn-Agent to fit your project's needs.
 - **Seamless Integration**: Designed to integrate smoothly with Claude’s API, making advanced AI-powered actions straightforward.
 
@@ -76,4 +76,4 @@ Special thanks to the [Anthropic Quickstarts repository](https://github.com/anth
 
 ---
 
-> Djinn-Agent is your companion for effortlessly harnessing the power of Claude’s computer-use capabilities. Whether you're automating tasks, developing AI workflows, or exploring new applications, Djinn-Agent is here to make it simple and efficient.
+> Djinn-Agent is your companion for harnessing the power of Claude’s computer-use capabilities directly from the terminal. With a focus on terminal-only operations, Djinn-Agent is perfect for automating tasks, developing AI workflows, and enhancing productivity through the command line.
