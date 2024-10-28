@@ -44,7 +44,7 @@ If you’re looking to work on or extend Djinn-Agent, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/sumleo/djinn-agent.git
+   git clone git@github.com:sumleo/djinn-agent.git
    cd djinn-agent
    ```
 
